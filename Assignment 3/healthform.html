@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health Survey Form</title>
+</head>
+<body>
+
+  <h1>Health Survey Form</h1>
+
+  <form action="/submit-health-survey" method="post">
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="0" required><br><br>
+
+    <label>Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label>
+    <input type="radio" id="female" name="gender" value="Female">
+    <label for="female">Female</label>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+
+    <label for="height">Height in cm:</label><br>
+    <input type="number" id="height" name="height" min="0" required><br><br>
+
+    <label for="weight">Weight in kg:</label><br>
+    <input type="number" id="weight" name="weight" min="0" required><br><br>
+
+    <label>Lifestyle Habits:</label><br>
+    <input type="checkbox" id="smoking" name="lifestyle" value="Smoking">
+    <label for="smoking">Smoking</label><br>
+    <input type="checkbox" id="alcohol" name="lifestyle" value="Alcohol">
+    <label for="alcohol">Alcohol Consumption</label><br>
+    <input type="checkbox" id="exercise" name="lifestyle" value="Exercise">
+    <label for="exercise">Regular Exercise</label><br>
+    <input type="checkbox" id="sleep" name="lifestyle" value="Sleep">
+    <label for="sleep">Sufficient Sleep</label><br><br>
+
+    <label for="diet">Dietary Preference:</label><br>
+    <select id="diet" name="diet" required>
+      <option value="">--Select--</option>
+      <option value="Vegetarian">Vegetarian</option>
+      <option value="Non-Vegetarian">Non-Vegetarian</option>
+      <option value="Vegan">Vegan</option>
+      <option value="Other">Other</option>
+    </select><br><br>
+
+    <label for="activity">Activity Level:</label><br>
+    <select id="activity" name="activity" required>
+      <option value="">--Select--</option>
+      <option value="Sedentary">Sedentary</option>
+      <option value="Moderate">Moderate</option>
+      <option value="Active">Active</option>
+    </select><br><br>
+
+    <label for="concerns">Any Health Concerns (optional):</label><br>
+    <textarea id="concerns" name="concerns" rows="4" cols="50"></textarea><br><br>
+
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+
+  </form>
+
+</body>
+</html>

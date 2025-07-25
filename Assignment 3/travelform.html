@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Booking Form</title>
+</head>
+<body>
+
+  <h1>Travel Booking Form</h1>
+
+  <form id="bookingForm">
+
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" required><br><br>
+
+    <label for="contact">Contact Information (Email or Phone):</label><br>
+    <input type="text" id="contact" name="contact" required><br><br>
+
+    <label for="destination">Destination:</label><br>
+    <select id="destination" name="destination" required>
+      <option value="">--Select--</option>
+      <option value="paris">Paris</option>
+      <option value="newyork">New York</option>
+      <option value="tokyo">Tokyo</option>
+      <option value="sydney">Sydney</option>
+    </select><br><br>
+
+    <label for="travelDate">Travel Date:</label><br>
+    <input type="date" id="travelDate" name="travelDate" required><br><br>
+
+    <label for="travelers">Number of Travelers:</label><br>
+    <input type="number" id="travelers" name="travelers" min="1" value="1" required><br><br>
+
+    <label>Travel Class:</label><br>
+    <input type="radio" id="economy" name="class" value="Economy" checked>
+    <label for="economy">Economy</label>
+    <input type="radio" id="business" name="class" value="Business">
+    <label for="business">Business</label>
+    <input type="radio" id="first" name="class" value="First Class">
+    <label for="first">First Class</label><br><br>
+
+    <input type="checkbox" id="insurance" name="insurance">
+    <label for="insurance">Add Travel Insurance</label><br><br>
+
+    <label>Total Cost (₹):</label><br>
+    <input type="text" id="totalCost" name="totalCost" readonly><br><br>
+
+    <button type="submit">Book Now</button>
+
+  </form>
+
+</body>
+</html>
