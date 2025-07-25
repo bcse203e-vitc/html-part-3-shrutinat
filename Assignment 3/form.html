@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Registration Form</title>
+</head>
+<body>
+ <h1>Registration form</h1>
+ <form action="/login" method="post">
+
+ <label for="full-name">Full name:</label><br>
+ <input type="text" id="full-name" name="full-name" required><br><br>
+ 
+ <label for="email">Email:</label><br>
+ <input type="email" id="email" name="email" required><br><br>
+
+ <label for="phn-num">Phone number:</label><br>
+ <input type="tel" id="phn-num" name="phn-num" pattern="[0-9]{10}" required><br><br>
+
+ <label for="gender">Gender:</label><br>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label><br>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label><br>
+
+ <label for ="age-group">Age Group:</label>
+ <select id="age-group" name="age-group" required>
+    <option value ="">Select age group</option>
+    <option value ="15-25">18-25</option>
+    <option value ="26-35">26-35</option>
+    <option value ="36-45">36-45</option>
+    <option value ="46+">46+</option>
+
+ </select><br><br>
+ 
+ <label>Topics of Interest:</label><br>
+ <input type="checkbox" id ="tech" name="topics" value="Technology">
+ <label for ="tech"> Technology</label><br>
+ <input type="checkbox" id ="art" name="topics" value="art">
+ <label for ="art"> Arts</label><br>
+ <input type="checkbox" id ="music" name="topics" value="music">
+ <label for ="music"> Music</label><br>
+
+ <label for ="comments">Additional comments:</label><br>
+ <textarea id="comments" name="comments" rows="4" cols="40"></textarea><br><br>
+ <button type="submit">Register</button><br><br>
+
+ <!-- <a href="#reset-password">Forgot Password?</a> -->
+ </form>
+
+</body>
+</html>
